@@ -17,12 +17,14 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
+
 def generate_synthetic_audio(duration=2.0, sr=22050, frequency=440.0):
     """Generate synthetic audio signal for demonstration."""
     t = np.linspace(0, duration, int(sr * duration), endpoint=False)
     # Create a simple tone with some noise
     signal = 0.5 * np.sin(2 * np.pi * frequency * t) + 0.1 * np.random.randn(len(t))
     return signal, sr
+
 
 def extract_mfcc_features(audio, sr, n_mfcc=10):
     """Extract MFCC features from audio signal."""
@@ -33,6 +35,7 @@ def extract_mfcc_features(audio, sr, n_mfcc=10):
     mfcc_mean = np.mean(mfccs, axis=1)
 
     return mfcc_mean
+
 
 def main():
     print("🎤 Voice Recognition Demo")
@@ -75,7 +78,7 @@ def main():
 
     plt.subplot(2, 2, 2)
     librosa.display.specshow(librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=10),
-                           x_axis='time', sr=sr)
+                             x_axis='time', sr=sr)
     plt.colorbar()
     plt.title('MFCC Spectrogram')
 
@@ -107,6 +110,7 @@ def main():
     print("   Run the Jupyter notebook: voice_recognition_project.ipynb")
     print("   Add audio data to data/raw/ directory")
     print("   Execute all cells to see complete ML pipeline")
+
 
 if __name__ == "__main__":
     main()
