@@ -109,77 +109,12 @@ voice-recognition-project/
 └── data/
     └── raw/                         # Audio recordings (not included)
 ```
-
-## Notebook Sections
-
-1. **Project Overview**: Technical skills and methodology summary
-2. **Data Processing**: MFCC extraction and dataset preparation
-3. **Exploratory Analysis**: PCA visualization and statistical testing
-4. **Gender Classification**: Distance-based classification achieving 100% accuracy
-5. **Speaker Identification**: Multi-class classification with various ML algorithms
-6. **Model Comparison**: Performance analysis of Naive Bayes, LDA, QDA, and GMM
-7. **Advanced Modeling**: Gaussian Mixture Models with hyperparameter optimization
-8. **Final Evaluation**: Comprehensive testing and robustness analysis
-9. **Conclusions**: Key insights and future improvements
-
-## For AI/ML Recruiters
-
-This project demonstrates:
-
-### 🎯 Technical Proficiency
-- **Audio Signal Processing**: MFCC feature engineering
-- **Statistical Rigor**: Hypothesis testing, multivariate analysis
-- **ML Implementation**: Multiple algorithms with proper evaluation
-- **Code Quality**: Well-documented, modular, and reproducible
-
-### 🔍 Problem-Solving Approach
-- Systematic methodology from data to deployment
-- Rigorous validation and statistical significance testing
-- Model selection based on empirical evidence
-- Clear communication of technical findings
-
-### 📊 Industry Relevance
-- Real-world application (voice recognition)
-- Scalable ML pipeline architecture
-- Performance optimization and evaluation
-- Production-ready code structure
-
-### 💡 Innovation & Depth
-- Advanced techniques (GMM, dimensionality reduction)
-- Comparative analysis of multiple approaches
-- Statistical validation of results
-- Extension to new scenarios (robustness testing)
-
-The notebook serves as a comprehensive case study of end-to-end machine learning development, from raw audio data to production-ready voice recognition system.
-
 ## Results
 
 The project achieves high accuracy in speaker identification through:
 - Gender classification with 100% accuracy using Mahalanobis distance
 - Speaker identification using optimized GMM models
 - Comprehensive model comparison and selection
-
-## Dependencies
-
-- librosa: Audio processing and MFCC extraction
-- numpy: Numerical computations
-- pandas: Data manipulation
-- matplotlib: Data visualization
-- seaborn: Statistical plotting
-- scikit-learn: Machine learning algorithms
-- scipy: Statistical functions
-
-## Author
-
-Aymen KHOMSI
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Dataset
-
-The dataset consists of audio recordings from 10 speakers. Place the raw audio files in the `data/raw/` directory.
 
 ## License
 
