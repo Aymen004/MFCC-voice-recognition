@@ -109,12 +109,6 @@ voice-recognition-project/
 └── data/
     └── raw/                         # Audio recordings (not included)
 ```
-## Results
-
-The project achieves high accuracy in speaker identification through:
-- Gender classification with 100% accuracy using Mahalanobis distance
-- Speaker identification using optimized GMM models
-- Comprehensive model comparison and selection
 
 ## License
 
